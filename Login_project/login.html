@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("./back.jpg.jpg");
+        background-size: cover;
+        margin: 0px;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .card {
+        background-color: azure;
+        background: transparent;
+        border-radius: 10px;
+        padding: 30px;
+        width: 300px;
+        vector-effect: non-rotation;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      .name-row {
+        display: flex;
+        gap: 5px;
+      }
+
+      .name-row input {
+        width: 100%;
+      }
+      input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 7px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: #d4daea;
+      }
+      input:hover {
+        background-color: rgb(242, 205, 205);
+      }
+      button {
+        color: white;
+        background-color: rgb(87, 57, 57);
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 25px;
+      }
+      button:hover {
+        background-color: rgb(62, 18, 18);
+      }
+      input:focus {
+        outline: none;
+        border: 1.5px solid rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Account</h1>
+      <form>
+        <input type="email" placeholder="Email" name="Email" id="" />
+        <div class="name-row">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <input type="password" placeholder="Password" name="Password" id="" />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
