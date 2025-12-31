@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(38, 86, 70);
+  color: white;
+}
+.nav-container {
+  margin-bottom: 40px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+.nav-container .one {
+  color: rgba(210, 210, 210, 0.708);
+}
+.nav-container .two {
+  color: rgb(196, 194, 193);
+}
+.nav-container .three {
+  color: rgb(200, 204, 190);
+}
+.nav1 {
+  background-color: rgb(100, 141, 143);
+  padding: 7px;
+}
+.nav1 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav1 li {
+  display: inline;
+}
+.nav1 a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.nav1 .login-btn {
+  color: rgb(255, 255, 255);
+  background-color: rgb(37, 103, 105);
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.nav1 a::after {
+  content: "abc";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  background-color: black;
+  color: rgb(0, 76, 79);
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0%;
+}
+
+.nav1 a:hover::after {
+  transform: scaleX(1);
+}
+.nav2 {
+  border: none;
+  background-color: rgb(90, 148, 128);
+  width: 200px;
+  padding: 20px;
+}
+.nav2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav2 li {
+  margin-bottom: 12px;
+}
+.nav2 a {
+  text-decoration: none;
+  color: aliceblue;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+.nav2 a:hover {
+  background-color: rgb(88, 143, 98);
+  color: black;
+}
+.nav2 .login-btn {
+  background-color: rgb(53, 120, 98);
+  border: none;
+  width: 100%;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+.nav2 .login-btn:hover {
+  background-color: rgb(40, 138, 117);
+}
+.nav3 {
+  background-color: rgb(74, 128, 110);
+  padding: 10px;
+}
+.nav3 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav3 a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px;
+  display: block;
+}
+.nav3 .dropdown-content {
+  position: absolute;
+  background-color: rgb(49, 114, 95);
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: max-height 1s ease, transform 1s ease, opacity 1s ease;
+  opacity: 0;
+}
+/* Hover: slide down smoothly */
+.nav3 .dropdown:hover .dropdown-content {
+  max-height: 300px; /* Adjust based on content height */
+  transform: translateY(0);
+  opacity: 1;
+  border-radius: 10%;
+}
+.nav3 .login-btn {
+  background-color: rgb(37, 103, 105);
+  border: none;
+  padding: 7px 15px;
+}
+.nav3 .login-btn:hover {
+  background-color: rgb(7, 131, 147);
+}
