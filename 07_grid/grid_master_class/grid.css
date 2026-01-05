@@ -43,9 +43,6 @@ h2 {
   gap: 10px;
   grid-template-rows: repeat(3, 100px);
 }
-.grid-container4 .box1 {
-  background-color: #ffffff;
-}
 
 .box {
   background-color: rgb(238, 255, 0);
