@@ -15,6 +15,15 @@ h2 {
   background-color: aliceblue;
   padding: 10px;
   margin-bottom: 10px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-rows: repeat(3, 100px); */
+}
+.grid-container1 {
+  display: grid;
+  gap: 10px;
+  background-color: aliceblue;
+  padding: 10px;
+  margin-bottom: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 100px);
 }
