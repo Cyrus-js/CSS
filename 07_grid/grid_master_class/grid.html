@@ -81,5 +81,39 @@
         <div class="box">6</div>
       </div>
     </div>
+
+    <div class="container">
+      <h2>7. Alignment and justification</h2>
+      <div
+        class="grid-container"
+        style="
+          grid-template-columns: repeat(3, 1fr);
+          height: 200px;
+          /* justify-content: center; */
+          align-items: center;
+        "
+      >
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>8. Nested grid</h2>
+      <div class="grid-container" style="grid-template-columns: 1fr 1fr">
+        <div class="box">1</div>
+        <div class="grid-container" style="grid-template-columns: 1fr 1fr">
+          <div class="box" style="background-color: rgb(0, 0, 0)">2.1</div>
+          <div class="box" style="background-color: rgb(0, 0, 0); color: white">
+            2.2
+          </div>
+          <div class="box" style="background-color: rgb(0, 0, 0)">2.3</div>
+          <div class="box" style="background-color: black; color: white">
+            2.4
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
