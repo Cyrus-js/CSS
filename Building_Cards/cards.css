@@ -1,0 +1,72 @@
+/* Center card on screen */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #000000;
+}
+
+/* Card container */
+.card {
+  width: 360px;
+  background: #545454;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(48, 48, 48, 0.15);
+  overflow: hidden;
+  text-align: center; /* center h1 & h2 */
+}
+
+/* Image on top */
+.card-img {
+  width: 100%;
+  display: block;
+}
+
+/* Headings */
+.card {
+  font-size: 24px;
+  margin: 16px 12px 4px;
+  background-color: #c2c2c2;
+}
+
+.card-subtitle {
+  font-size: 16px;
+  margin: 0 12px 16px;
+  color: #666;
+}
+
+/* Buttons row */
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 0 20px;
+  background-color: #ff9800;
+}
+
+/* Buttons style */
+.btn {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-buy {
+  background: #111;
+  color: #fff;
+}
+
+.btn-cart {
+  background: #ff9800;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
