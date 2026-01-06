@@ -44,7 +44,7 @@ body {
   justify-content: center;
   gap: 12px;
   padding: 16px 0 20px;
-  background-color: #ff9800;
+  background-color: #000000;
 }
 
 /* Buttons style */
@@ -63,7 +63,7 @@ body {
 }
 
 .btn-cart {
-  background: #ff9800;
+  background: #001651;
   color: #fff;
 }
 
