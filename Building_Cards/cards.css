@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
-  background: #000000;
+  background: linear-gradient(0deg, #000000 0%, #870000 100%);
 }
 
 /* Card container */
@@ -58,15 +58,20 @@ body {
 }
 
 .btn-buy {
-  background: #111;
+  background: #ff0000;
   color: #fff;
 }
 
 .btn-cart {
-  background: #001651;
+  background: #0044ff;
   color: #fff;
 }
 
-.btn:hover {
-  opacity: 0.9;
+.btn-buy:hover {
+  background-color: white;
+  color: #000000;
+}
+.btn-cart:hover {
+  background-color: white;
+  color: #000000;
 }
