@@ -118,3 +118,18 @@ body {
   color: #fff;
   box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
 }
+
+.btn-cart:hover {
+  background: linear-gradient(45deg, #fff, #f0f0f0);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 152, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card {
+    margin: 20px;
+    max-width: 340px;
+  }
+}
