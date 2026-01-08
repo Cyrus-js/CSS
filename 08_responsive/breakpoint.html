@@ -12,6 +12,34 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100vh;
+        background-color: rgb(58, 42, 42);
+      }
+      .responsive-div {
+        color: white;
+        background-color: brown;
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+        font-size: 24px;
+      }
+      @media (max-width: 600px) {
+        body {
+          align-items: flex-start;
+        }
+        .responsive-div {
+          background-color: rgb(161, 124, 75);
+          color: black;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 1000px) {
+        body {
+          align-items: end;
+        }
+        .responsive-div {
+          background-color: rgb(0, 0, 0);
+        }
       }
     </style>
   </head>
