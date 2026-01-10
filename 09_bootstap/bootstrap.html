@@ -19,6 +19,31 @@
         justify-content: center;
         height: 100vh;
       }
+      /* Dropdown on Hover */
+      .dropdown:hover .dropdown-menu {
+        display: block !important;
+      }
+
+      /* Smooth hover animation */
+      .dropdown-menu {
+        animation: fadeInDown 0.3s ease-out;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Fix your dropdown HTML structure */
+      .dropdown-menu {
+        min-width: 200px;
+      }
     </style>
   </head>
   <body>
