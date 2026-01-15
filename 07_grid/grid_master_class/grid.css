@@ -9,6 +9,14 @@ h2 {
   margin-bottom: 20px;
   padding: 10px;
 }
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: aliceblue;
+  padding: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 100px);
+}
 .grid-container1 {
   display: grid;
   gap: 10px;
@@ -44,6 +52,11 @@ h2 {
   grid-template-rows: repeat(3, 100px);
 }
 
+.grid-container5 {
+  display: grid !important;
+  gap: 10px;
+  height: 200px;
+}
 .box {
   background-color: rgb(238, 255, 0);
   color: rgb(0, 0, 0);

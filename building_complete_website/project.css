@@ -1,29 +1,63 @@
+body {
+  background: linear-gradient(
+    180deg,
+    rgb(0, 56, 0),
+    black,
+    rgb(164, 0, 0)
+  ) !important;
+}
+
 .container {
-  background-color: rgb(112, 179, 213);
-  padding: 0px;
-  height: 100vh;
-
-  border-radius: 24px;
-  margin: 0;
-}
-.grid-container {
   display: grid;
-  grid-template-columns: (3, 1fr);
-  grid-template-rows: (3, 50px);
-  background-color: rgb(8, 59, 31);
-  gap: 10px;
+  margin: 0px;
+  padding: 10px;
+  background: linear-gradient(360deg, rgb(0, 0, 0), rgb(4, 44, 4));
+  border-radius: 29px;
+  height: 100vh;
+}
 
-  border-radius: 24px;
-  padding: 0px;
-  margin: 0;
-  height: 98vh;
+.carousel-item img {
+  height: 450px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 18px;
 }
-.box {
-  background-color: aquamarine;
-  border-radius: 24px;
-  align-content: center;
+
+.video-grid {
+  display: grid;
+  padding: 40px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.video-box {
-  background-color: aquamarine;
-  border-radius: 24px;
+iframe {
+  border-radius: 30px;
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+}
+.video-card h3 {
+  color: rgb(7, 133, 24);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+.video-card button {
+  background: linear-gradient(180deg, rgb(9, 58, 9), rgb(25, 1, 1));
+  color: aliceblue;
+
+  display: block;
+  margin: 10px auto;
+}
+
+.video-card button:hover {
+  color: white;
+  border: solid 1px white;
+}
+.footer {
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 30px;
+  background-color: rgb(5, 96, 20);
 }

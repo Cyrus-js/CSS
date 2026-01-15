@@ -5,16 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website</title>
     <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <div class="grid-container">
-        <div class="box" style="grid-column: 1/4; grid-row: 1/4">1</div>
-        <div class="video-box">2</div>
-        <div class="video-box">3</div>
-        <div class="video-box">4</div>
-        <div class="box" style="grid-column: 1/4; grid-row: 3, 10px">5</div>
+        <div class="carousel">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.pexels.com/photos/33045/lion-wild-africa-african.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="video-grid">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/FK3dav4bA4s?si=J1XuogCbLgoO1P77"
+              allowfullscreen
+            ></iframe>
+            <h3>Tiger</h3>
+            <button class="btn btn-click">Watch Now</button>
+          </div>
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/OMkEVX23BdM?si=DfxNMv0SKt2RO4ke"
+            ></iframe>
+            <h3>Lion</h3>
+            <button class="btn btn-click">Watch Now</button>
+          </div>
+          <div class="video-card">
+            <iframe
+              width="300"
+              height="150"
+              src="https://www.youtube-nocookie.com/embed/Aw6GkiCvcWs?si=lOygLav1dq0EPFI-"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3>Elephant</h3>
+            <button class="btn btn-click">Watch Now</button>
+          </div>
+        </div>
+        <div class="footer">
+          <p>&copy; 2026 Save Wild Life Campaign.</p>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

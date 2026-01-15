@@ -7,8 +7,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -20,23 +20,8 @@ body {
   overflow-x: hidden;
 }
 
-/* PROFESSIONAL HEADER */
-.navbar {
-  background: rgba(15, 23, 42, 0.95);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-}
-
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.5rem;
-  background: linear-gradient(45deg, var(--secondary), #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* MAIN HERO GRID */
-.hero-grid {
+.container {
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 3rem;
