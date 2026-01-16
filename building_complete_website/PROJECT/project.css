@@ -5,6 +5,7 @@ body {
     black,
     rgb(164, 0, 0)
   ) !important;
+  min-height: 100vh;
 }
 
 .container {
@@ -13,7 +14,7 @@ body {
   padding: 10px;
   background: linear-gradient(360deg, rgb(0, 0, 0), rgb(4, 44, 4));
   border-radius: 29px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .carousel-item img {
@@ -27,11 +28,11 @@ body {
 .video-grid {
   display: grid;
   padding: 40px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 iframe {
   border-radius: 30px;
-  height: 200px;
+  height: 400px;
   width: 100%;
   padding: 10px;
 }
@@ -45,7 +46,6 @@ iframe {
 .video-card button {
   background: linear-gradient(180deg, rgb(9, 58, 9), rgb(25, 1, 1));
   color: aliceblue;
-
   display: block;
   margin: 10px auto;
 }
@@ -60,4 +60,5 @@ iframe {
   margin: 10px auto;
   font-size: 30px;
   background-color: rgb(5, 96, 20);
+  padding: 20px;
 }
